@@ -273,7 +273,7 @@ def post_create(request):
                 ratedpost.category = category
                 ratedpost.save()
                 pk = ratedpost.id
-
+        #print('test')
         return redirect(f"/detail/{pk}?category={category}")
 
 
